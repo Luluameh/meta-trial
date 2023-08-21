@@ -1,0 +1,452 @@
+/* Start of Hero section  */
+.hero {
+  background-color: #495e57;
+  display: flex;
+}
+
+.hero__content {
+  min-width: 55%;
+  text-align: left;
+}
+
+.hero__location {
+  font-family: "Markazi Text", serif;
+  font-size: 1.85rem;
+  font-weight: 500;
+}
+
+.hero__desc {
+  margin-top: 1rem;
+  width: 65%;
+}
+
+.hero__btn {
+  width: 30%;
+  display: block;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.15rem;
+  background-color: #f4ce14;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1.25rem;
+  margin-top: 1.75rem;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  transition: 300ms;
+}
+
+.hero__btn:hover {
+  cursor: pointer;
+  background-color: #ddbc18;
+}
+
+.hero__img {
+  object-fit: cover;
+  max-width: 45%;
+}
+
+/* End of Hero Section  */
+
+/* ------------------------------------------------------------ */
+
+/* Start of Specials Section */
+
+.specials {
+  padding: 3rem 20rem;
+}
+
+.specials__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.specials__heading {
+  font-size: 2.5rem;
+}
+
+.specials__btn {
+  font-size: 1.15rem;
+  background-color: #f4ce14;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1.25rem;
+  transition: 300ms;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.specials__btn:hover {
+  cursor: pointer;
+  background-color: #ddbc18;
+}
+
+.specials__row {
+  display: flex;
+  justify-content: center;
+  gap: 2.75rem;
+  margin-top: 2.5rem;
+}
+
+.dish-card {
+  background-color: #edefee;
+  width: 30%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.dish-card__image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.dish-card__details {
+  padding: 1rem;
+}
+
+.dish-card__details div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dish-card__title {
+  font-size: 1.25rem;
+}
+
+.dish-card__price {
+  color: #d0af0a;
+}
+
+.dish-card__desc {
+  margin-top: 1rem;
+  height: 140px;
+}
+
+.dish-card__order {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+}
+
+.dish-card__order img {
+  width: 20px;
+}
+
+/* End of Specials section */
+
+/* ------------------------------------------------------------ */
+
+/* Start of Testimonials section*/
+
+.testimonials {
+  padding: 3rem 2rem;
+  background-color: #f4ce14;
+  text-align: center;
+}
+
+.testimonials__title {
+  font-size: 2.25rem;
+}
+
+.testimonials__row {
+  display: grid;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  width: 100%;
+  display: flex;
+  background-color: #fff;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.card__img {
+  width: 40%;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.card__details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 0.5rem 1rem;
+}
+
+.card__name {
+  font-weight: bold;
+}
+
+.card__review {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  font-style: italic;
+}
+
+.card__rating {
+  color: #ddbc18;
+  font-weight: bold;
+}
+
+/* End of Testimonials section */
+
+/* ------------------------------------------------------------ */
+
+/* Start of About section*/
+
+.about {
+  padding: 4rem 10rem 5rem 10rem;
+  display: flex;
+}
+
+.about__content {
+  width: 40%;
+  margin-right: 3rem;
+}
+
+.about__heading {
+  font-size: 3rem;
+}
+
+.about__location {
+  font-size: 2rem;
+}
+
+.about__desc {
+  margin-top: 1rem;
+}
+
+.about__img-container {
+  width: 300px;
+  height: 300px;
+  display: none;
+  position: relative;
+}
+
+.about__img {
+  width: 320px;
+  position: absolute;
+}
+
+.about__img--1 {
+  top: 1%;
+  left: 65%;
+}
+
+.about__img--2 {
+  top: 7rem;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+/* End of About section */
+
+/* ------------------------------------------------------------ */
+
+/* Viewports */
+
+/* Start of Hero Viewports */
+
+@media (max-width: 576px) {
+  .hero {
+    padding: 2rem;
+  }
+
+  .hero__content {
+    text-align: center;
+  }
+
+  .hero__title {
+    font-size: 2.5rem;
+  }
+
+  .hero__desc {
+    width: 100%;
+  }
+
+  .hero__img {
+    display: none;
+  }
+
+  .hero__btn {
+    width: 45%;
+    margin: 2rem auto 0 auto;
+  }
+}
+
+@media (min-width: 576px) {
+  .hero {
+    padding: 3rem 4rem;
+  }
+
+  .hero__title {
+    font-size: 3rem;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .hero {
+    padding: 3rem 8rem;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .hero {
+    padding: 3rem 12rem;
+  }
+
+  .hero__title {
+    font-size: 4rem;
+  }
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .hero {
+    padding: 3rem 20rem;
+  }
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}
+
+/* End of Hero Viewports */
+/* ------------------------------------------------------------ */
+/* Start of Specials Viewports */
+
+@media (max-width: 576px) {
+  .specials {
+    padding: 3rem 2rem;
+  }
+
+  .specials__row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dish-card {
+    width: 80%;
+  }
+}
+
+@media (min-width: 576px) {
+  .specials {
+    padding: 3rem 2rem;
+  }
+
+  .specials__row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dish-card {
+    width: 50%;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .specials {
+    padding: 3rem 6rem;
+  }
+
+  .specials__row {
+    flex-direction: row;
+  }
+
+  .dish-card {
+    width: 30%;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .specials {
+    padding: 3rem 10rem;
+  }
+}
+
+/* End of Specials Viewports */
+/* ------------------------------------------------------------ */
+/* Start of Testimonials Viewports */
+
+@media (min-width: 576px) {
+  .testimonials__row {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .card__details {
+    margin: 0 auto;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .testimonials {
+    padding: 3rem 6rem;
+  }
+
+  .testimonials__row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .testimonials__row {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* End of Testimonials Viewports */
+/* ------------------------------------------------------------ */
+/* Start of About Viewports */
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .about {
+    padding: 4rem 8rem 10rem 8rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .about {
+    padding: 4rem;
+    justify-content: center;
+  }
+
+  .about__content {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .about {
+    padding: 4rem 12rem 6rem 12rem;
+  }
+
+  .about__img-container {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about {
+    padding: 4rem 20rem 6rem 20rem;
+  }
+}

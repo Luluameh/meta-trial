@@ -1,0 +1,26 @@
+.confirmation {
+  background-color: #f4ce14;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 61.1vh;
+}
+
+.confirmation__heading {
+  font-size: 3rem;
+}
+
+.confirmation__thank-you {
+  font-size: 1.75rem;
+}
+
+.confirmation__btn {
+  text-decoration: none;
+  color: #fff;
+  background-color: #495e57;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+}

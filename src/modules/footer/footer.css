@@ -1,0 +1,40 @@
+.footer {
+  padding: 3rem 0;
+  background-color: #495e57;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.footer__heading {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer__list {
+  list-style: none;
+}
+
+.footer__list li:hover {
+  cursor: pointer;
+}
+
+.footer_contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__socials {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Viewports */
+
+@media (max-width: 576px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
